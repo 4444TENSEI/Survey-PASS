@@ -1,0 +1,29 @@
+
+# 验证码错误时的尝试次数
+retry_num = 5
+# 验证码长度, 由于验证码有时候匹配不准确，可以设置一个匹配长度，如果不匹配则会自动重试
+min_code_key_length = 5
+
+
+# 表格形式储存的账号, 于"/modules/login/excel.py"代码中定义账号密码匹配条件, 目前的密码是从身份证的出生年月匹配，自行修改
+excel_file_path = "data/用户示例.xlsx"
+# 签名图片路径, 可以自行编辑和修改路径, 建议jpg格式，要是其他格式还要改其他地方
+signature_img_file_path = "data/签名图片.jpg"
+
+
+# 自行修改前缀为可用的根域名
+base_url = "http://666.666.666.666"
+# 登录接口
+login_url = "/user/api/user/login"
+# 获取验证码接口
+code_key_ocr_url = "/user/api/user/ImgCode/get"
+get_code_key_url = "/user/api/user/ImgCode/show"
+# 获取题目接口
+answer_url = "/user/api/Scale/AnswerScale"
+# 获取问卷首页的问卷列表
+get_planid_url = "/user/api/scale/v1.1/list/unplan"
+get_detail_url = "/user/api/scale/v1.1/plan/detail"
+# 上传签名接口
+upload_signature_img_url = "/user/api/signature/create"
+# 提交问卷接口
+submit_url = "/user/api/Scale/submit"

@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+dist/
+build/
+test/
+
+clean.bat
+
+login_log.txt
+main.spec
+config.toml
+account.xlsx
